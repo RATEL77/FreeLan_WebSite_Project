@@ -22,3 +22,13 @@ body {
 .hero-section {
   background-color: var(--main-color);
 }
+
+/* 서비스 카드 */
+.card img {
+  display: block;
+  margin: 0 auto;
+}
+
+.border-dashed {
+  border: 2px dashed #bbb;
+}
