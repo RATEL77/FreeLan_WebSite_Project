@@ -7,8 +7,18 @@
 
 /* 기본 설정 */
 body {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   background-color: #fdfdfd;
   color: #111;
   line-height: 1.6;
+}
+
+/* 색상 변수 */
+:root {
+  --main-color: #92cddc;
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: var(--main-color);
 }
