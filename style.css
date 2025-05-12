@@ -1,0 +1,14 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 기본 설정 */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #fdfdfd;
+  color: #111;
+  line-height: 1.6;
+}
