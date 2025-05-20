@@ -41,37 +41,52 @@
     </header>
 
     <main>
-      <!-- Hero 섹션: 영상 + 메시지 -->
-      <section
-        class="hero-section py-5"
-        style="background-color: var(--bg-soft-blue); min-height: 85vh"
-      >
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-6 text-center">
-              <video
-                autoplay
-                muted
-                loop
-                playsinline
-                class="img-fluid rounded shadow w-100"
-              >
-                <source
-                  src="assets/media/hero/hero-graphic.mp4"
-                  type="video/mp4"
-                />
+      <!-- Hero 섹션 -->
+<section class="hero-section py-4" style="background-color: var(--bg-soft-blue); min-height: 60vh;">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- 영상 Carousel -->
+      <div class="col-md-6 text-center">
+        <div id="heroVideoCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner rounded shadow">
+
+            <div class="carousel-item active">
+              <video autoplay muted loop playsinline class="w-100 rounded">
+                <source src="assets/media/hero/hero-graphic1.mp4" type="video/mp4" />
               </video>
             </div>
-            <div class="col-md-6 text-start mt-4 mt-md-0">
-              <h1 class="display-4 fw-bold mb-3">Your talent starts here</h1>
-              <p class="lead mb-4">
-                FreeLan connects skilled freelancers with clients worldwide.
-              </p>
-              <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+
+            <div class="carousel-item">
+              <video autoplay muted loop playsinline class="w-100 rounded">
+                <source src="assets/media/hero/hero-graphic2.mp4" type="video/mp4" />
+              </video>
             </div>
+
+            <div class="carousel-item">
+              <video autoplay muted loop playsinline class="w-100 rounded">
+                <source src="assets/media/hero/hero-graphic3.mp4" type="video/mp4" />
+              </video>
+            </div>
+
           </div>
         </div>
-      </section>
+      </div>
+
+      <!-- 텍스트 영역 -->
+      <div class="col-md-6 text-start mt-4 mt-md-0">
+        <h1 class="display-5 fw-bold mb-3">Your talent starts here</h1>
+        <p class="lead mb-4">Work with clients, grow your skills, and build a freelance career on your terms.</p>
+        <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 기능 설명, 카테고리, 후기 등 다른 섹션 이어짐... -->
+
+
+
+
 
       <!-- 보조 일러스트 삽입 영역 -->
       <section class="py-5 text-center bg-light">
@@ -155,10 +170,29 @@
     </div>
   </div>
 </section>
-
+<!-- CTA 유도 영상 섹션 -->
+<section class="py-5 bg-dark text-white">
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <!-- 세로 영상 -->
+      <div class="col-md-6 text-center mb-4 mb-md-0">
+        <video autoplay muted loop playsinline class="w-100 rounded-3 shadow" style="max-height: 480px;">
+          <source src="assets/media/hero/cta-video.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <!-- 텍스트 -->
+      <div class="col-md-6 text-md-start text-center">
+        <h2 class="fw-bold mb-3">Start your journey today</h2>
+        <p class="mb-4">FreeLan empowers freelancers to grow, earn, and work freely.</p>
+        <a href="#" class="btn btn-light btn-lg">Join Free</a>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="py-5 bg-white">
   <div class="container">
     <div class="row align-items-center">
+      
       <!-- 이미지 영역 -->
       <div class="col-md-6 mb-4 mb-md-0">
         <img src="assets/media/hero/hero-graphic2.svg" alt="Feature graphic" class="img-fluid rounded-3 shadow-sm" />
