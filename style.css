@@ -27,7 +27,7 @@ body {
 }
 
 /* ----------------------- */
-/* 🔹 3. 전체 레이아웃 구조 */
+/* 🔹 3. 전체 섹션 여백 공통 정의 */
 /* ----------------------- */
 section {
   padding-top: 3rem;
@@ -73,7 +73,7 @@ a:hover {
   color: var(--main-color);
 }
 
-/* 부가 정보 스타일 */
+/* 강조 텍스트 */
 .lead {
   font-size: 1.125rem;
   font-weight: 400;
@@ -140,6 +140,7 @@ a:hover {
   border: 2px dashed #bbb;
 }
 
+/* 버튼 인터랙션 */
 .btn-outline-primary {
   transition: all 0.3s ease;
 }
@@ -150,38 +151,23 @@ a:hover {
   border-color: var(--main-color);
 }
 
-.btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-/* ----------------------- */
-/* 🔹 7. 내비게이션 스타일 */
-/* ----------------------- */
-.nav-link {
-  position: relative;
-  transition: color 0.2s ease;
-}
-
-.nav-link:hover {
-  color: var(--main-color);
-}
-
-.nav-link::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
+.btn-primary {
   background-color: var(--main-color);
-  transition: width 0.3s ease;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
 }
 
-.nav-link:hover::after {
-  width: 100%;
+.btn-primary:hover {
+  background-color: #7bbfcc;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
 }
 
+/* ----------------------- */
+/* 🔹 7. 네비게이션 스타일 */
+/* ----------------------- */
 .navbar {
   font-weight: 600;
   font-size: 1rem;
@@ -192,6 +178,10 @@ a:hover {
   padding: 0.75rem 1rem;
   position: relative;
   transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--main-color);
 }
 
 .nav-link::after {
@@ -211,7 +201,7 @@ a:hover {
 }
 
 /* ----------------------- */
-/* 🔹 8. 이미지 스타일 */
+/* 🔹 8. 이미지 관련 스타일 */
 /* ----------------------- */
 .card img {
   display: block;
@@ -227,12 +217,8 @@ a:hover {
 }
 
 /* ----------------------- */
-/* 🔹 9. 링크 및 푸터 */
+/* 🔹 9. 푸터 스타일 */
 /* ----------------------- */
-a {
-  transition: all 0.3s ease;
-}
-
 footer {
   font-size: 0.9rem;
   padding-top: 2rem;
