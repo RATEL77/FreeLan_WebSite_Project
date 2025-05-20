@@ -118,11 +118,25 @@ h2 {
   width: 100%;
 }
 
+.hero-section {
+  background: linear-gradient(135deg, var(--main-color), #addde9);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.hero-section h1,
+.hero-section p {
+  color: #fff;
+}
+
+.hero-section .btn {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
 /* 링크 공통 */
 a {
   transition: all 0.3s ease;
 }
-
 
 /* Footer */
 footer {
