@@ -1,11 +1,12 @@
-/* Reset */
+/* ----------------------- */
+/* 🔹 1. 초기화 및 기본 설정 */
+/* ----------------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 기본 설정 */
 body {
   font-family: "Noto Sans KR", sans-serif;
   background-color: #fdfdfd;
@@ -13,7 +14,9 @@ body {
   line-height: 1.6;
 }
 
-/* 색상 변수 */
+/* ----------------------- */
+/* 🔹 2. 색상 변수 정의 */
+/* ----------------------- */
 :root {
   --main-color: #92cddc;
   --bg-soft-blue: #eef7fa;
@@ -23,66 +26,61 @@ body {
   --accent: #2c7da0;
 }
 
-/* Hero Section */
-.hero-section {
-  background-color: var(--main-color);
+/* ----------------------- */
+/* 🔹 3. 전체 레이아웃 구조 */
+/* ----------------------- */
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
-/* 서비스 카드 이미지 */
-.card img {
-  display: block;
-  margin: 0 auto;
-}
-
-/* 창업자 이미지 */
-#founder img {
-  border: 4px solid #ddd;
-}
-
-/* 버튼 hover 효과 */
-.btn-outline-primary:hover {
-  background-color: var(--main-color);
-  color: #fff;
-  border-color: var(--main-color);
-}
-
-/* 점선 테두리 카드 */
-.border-dashed {
-  border: 2px dashed #bbb;
-}
-
-/* 인용구 스타일 */
-.blockquote {
-  font-size: 1.1rem;
-  font-style: italic;
-}
-
-/* 제목 스타일 */
 h2 {
   font-size: 1.75rem;
   margin-bottom: 2rem;
 }
 
-/* 카드 제목 */
-.card-title {
-  font-size: 1.1rem;
-  font-weight: 600;
+/* ----------------------- */
+/* 🔹 4. Hero 섹션 스타일 */
+/* ----------------------- */
+.hero-section {
+  background: linear-gradient(135deg, var(--main-color), #addde9);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  min-height: 80vh;
 }
 
-/* 카드 기본 스타일 */
+.hero-section h1,
+.hero-section p {
+  color: #fff;
+}
+
+.hero-section .btn {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* ----------------------- */
+/* 🔹 5. 공통 컴포넌트 */
+/* ----------------------- */
 .card {
   background-color: var(--card-bg);
   transition: all 0.3s ease;
 }
 
-/* 카드 hover 효과 */
-/* 카드 hover 강화 */
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+.card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
 }
 
-/* 버튼 인터랙션 */
+.blockquote {
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.border-dashed {
+  border: 2px dashed #bbb;
+}
+
 .btn-outline-primary {
   transition: all 0.3s ease;
 }
@@ -93,7 +91,14 @@ h2 {
   border-color: var(--main-color);
 }
 
-/* 네비게이션 링크 */
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ----------------------- */
+/* 🔹 6. 내비게이션 스타일 */
+/* ----------------------- */
 .nav-link {
   position: relative;
   transition: color 0.2s ease;
@@ -118,44 +123,26 @@ h2 {
   width: 100%;
 }
 
-.hero-section {
-  background: linear-gradient(135deg, var(--main-color), #addde9);
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.hero-section h1,
-.hero-section p {
-  color: #fff;
-}
-
-.hero-section .btn {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-}
-
-.btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-.card-title {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-top: 0.5rem;
-}
-
+/* ----------------------- */
+/* 🔹 7. 이미지 스타일 */
+/* ----------------------- */
 .card img {
   display: block;
   margin: 0 auto;
   margin-top: 1.5rem;
 }
 
-/* 링크 공통 */
+#founder img {
+  border: 4px solid #ddd;
+}
+
+/* ----------------------- */
+/* 🔹 8. 링크 및 푸터 */
+/* ----------------------- */
 a {
   transition: all 0.3s ease;
 }
 
-/* Footer */
 footer {
   font-size: 0.9rem;
   padding-top: 2rem;
