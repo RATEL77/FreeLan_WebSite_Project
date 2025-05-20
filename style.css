@@ -275,3 +275,23 @@ footer a:hover {
   transform: scale(1.05);
   opacity: 1;
 }
+
+
+.scroll-top-btn {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  z-index: 1050;
+  display: none;
+}
+
+.cta-video {
+  max-height: 380px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
