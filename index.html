@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FreeLan</title>
-
-    <!-- Bootstrap CSS -->
+    <!-- 부트스트랩 CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <!-- Custom CSS -->
+    <!-- 사용자 정의 CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- 헤더 영역: 내비게이션 -->
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container">
@@ -23,9 +23,6 @@
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -33,7 +30,7 @@
             <ul class="navbar-nav ms-auto">
               <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Categories</a>
+                <a class="nav-link" href="#service-section">Categories</a>
               </li>
               <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
               <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
@@ -44,7 +41,7 @@
     </header>
 
     <main>
-      <!-- Hero Section -->
+      <!-- Hero 섹션: 영상 + 메시지 -->
       <section
         class="hero-section py-5"
         style="background-color: var(--bg-soft-blue); min-height: 85vh"
@@ -75,6 +72,8 @@
           </div>
         </div>
       </section>
+
+      <!-- 보조 일러스트 삽입 영역 -->
       <section class="py-5 text-center bg-light">
         <div class="container">
           <img
@@ -86,93 +85,76 @@
         </div>
       </section>
 
-      <!-- 서비스 카테고리 -->
-      <section class="py-4" style="background-color: var(--bg-soft-blue)">
+      <!-- 서비스 카테고리 섹션 -->
+      <section
+        id="service-section"
+        class="py-4"
+        style="background-color: var(--bg-soft-blue)"
+      >
         <div class="container">
           <h2 class="text-center fw-bold mb-4">Service Categories</h2>
           <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
             <div class="col">
-              <div class="card h-100 text-center shadow-sm rounded-3">
-                <img src="assets/icons/design.svg" alt="Design" class="icon" />
+              <div class="card text-center shadow-sm">
+                <img src="assets/icons/design.svg" class="icon" />
                 <h5 class="card-title">Design</h5>
               </div>
             </div>
             <div class="col">
-              <div class="card h-100 text-center shadow-sm rounded-3">
-                <img
-                  src="assets/icons/develop.svg"
-                  alt="Development"
-                  class="icon"
-                />
+              <div class="card text-center shadow-sm">
+                <img src="assets/icons/develop.svg" class="icon" />
                 <h5 class="card-title">Development</h5>
               </div>
             </div>
             <div class="col">
-              <div class="card h-100 text-center shadow-sm rounded-3">
-                <img
-                  src="assets/icons/translate.svg"
-                  alt="Translation"
-                  class="icon"
-                />
+              <div class="card text-center shadow-sm">
+                <img src="assets/icons/translate.svg" class="icon" />
                 <h5 class="card-title">Translation</h5>
               </div>
             </div>
             <div class="col">
-              <div class="card h-100 text-center shadow-sm rounded-3">
-                <img
-                  src="assets/icons/writing.svg"
-                  alt="Writing"
-                  class="icon"
-                />
+              <div class="card text-center shadow-sm">
+                <img src="assets/icons/writing.svg" class="icon" />
                 <h5 class="card-title">Writing</h5>
               </div>
             </div>
             <div class="col">
-              <div class="card h-100 text-center shadow-sm rounded-3">
-                <img
-                  src="assets/icons/marketing.svg"
-                  alt="Marketing"
-                  class="icon"
-                />
+              <div class="card text-center shadow-sm">
+                <img src="assets/icons/marketing.svg" class="icon" />
                 <h5 class="card-title">Marketing</h5>
               </div>
             </div>
             <div class="col">
-              <div class="card h-100 text-center shadow-sm rounded-3">
-                <img
-                  src="assets/icons/video.svg"
-                  alt="Video Editing"
-                  class="icon"
-                />
+              <div class="card text-center shadow-sm">
+                <img src="assets/icons/video.svg" class="icon" />
                 <h5 class="card-title">Video Editing</h5>
               </div>
             </div>
             <div class="col">
-              <div class="card h-100 text-center shadow-sm rounded-3">
-                <img
-                  src="assets/icons/consult.svg"
-                  alt="Consulting"
-                  class="icon"
-                />
+              <div class="card text-center shadow-sm">
+                <img src="assets/icons/consult.svg" class="icon" />
                 <h5 class="card-title">Consulting</h5>
               </div>
             </div>
             <div class="col">
-              <div class="card h-100 text-center shadow-sm rounded-3">
-                <img src="assets/icons/music.svg" alt="Music" class="icon" />
+              <div class="card text-center shadow-sm">
+                <img src="assets/icons/music.svg" class="icon" />
                 <h5 class="card-title">Music</h5>
               </div>
             </div>
-            <div class="text-center mt-5">
-              <a href="#" class="btn btn-primary btn-lg px-5 shadow"
-                >View All Services</a
-              >
-            </div>
+          </div>
+          <!-- 전체보기 버튼 -->
+          <div class="text-center mt-5">
+            <a
+              href="#service-section"
+              class="btn btn-primary btn-lg px-5 shadow"
+              >View All Services</a
+            >
           </div>
         </div>
       </section>
 
-      <!-- 후기 Carousel -->
+      <!-- 후기 섹션 -->
       <section class="py-4" style="background-color: var(--bg-light)">
         <div class="container">
           <h2 class="text-center fw-bold mb-4">User Reviews</h2>
@@ -235,6 +217,7 @@
                 </blockquote>
               </div>
             </div>
+            <!-- 슬라이드 버튼 -->
             <button
               class="carousel-control-prev"
               type="button"
@@ -256,7 +239,7 @@
       </section>
     </main>
 
-    <!-- Footer -->
+    <!-- 푸터 -->
     <footer class="bg-dark text-white py-4">
       <div class="container text-center">
         <p class="mb-1 fw-semibold">
@@ -273,7 +256,7 @@
       </div>
     </footer>
 
-    <!-- Bootstrap JS -->
+    <!-- 부트스트랩 JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       defer
