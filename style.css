@@ -214,6 +214,21 @@ section {
 }
 
 /* ============================================ */
+/* 6.5 Features Section                         */
+/* ============================================ */
+
+.features-section .row {
+  column-gap: 6rem;
+  row-gap: 2rem;      
+}
+
+@media (max-width: 768px) {
+  .features-section .row {
+    column-gap: 1.5rem;
+  }
+}
+
+/* ============================================ */
 /* 7. Review Carousel                           */
 /* ============================================ */
 .review-carousel {
