@@ -5,7 +5,7 @@ This site demonstrates a responsive, accessible, and fully navigable layout insp
 
 ---
 
-## 📘 ## 🇺🇸 English Version
+## 📘 🇺🇸 English Version
 
 ### 🚀 Project Overview
 
