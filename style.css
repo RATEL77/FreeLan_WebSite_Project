@@ -1,6 +1,4 @@
-/* ============================================ */
-/* 0. 리셋 · 변수                               */
-/* ============================================ */
+/* 리셋 및 변수 */
 *,
 *::before,
 *::after {
@@ -20,9 +18,7 @@ html {
   --card-bg: #ffffff;
 }
 
-/* ============================================ */
-/* 1. 글로벌                                    */
-/* ============================================ */
+/* 글로벌 스타일 */
 body {
   font-family: "Inter", sans-serif;
   background: var(--bg-light);
@@ -41,6 +37,8 @@ body {
 header {
   backdrop-filter: blur(6px);
 }
+
+/* 네비게이션 */
 .nav-link {
   font-size: 1.05rem;
   font-weight: 600;
@@ -65,9 +63,7 @@ header {
   width: 100%;
 }
 
-/* ============================================ */
-/* 2. Hero                                      */
-/* ============================================ */
+/* 히어로 섹션 */
 .hero-section {
   padding: 5rem 0;
 }
@@ -106,20 +102,16 @@ header {
     opacity: 0;
   }
 }
-
 .hero-section .row {
   column-gap: 8rem;
 }
-
 @media (max-width: 992px) {
   .hero-section .row {
     column-gap: 2rem;
   }
 }
 
-/* ============================================ */
-/* 3. 카드 & 카테고리                           */
-/* ============================================ */
+/* 카드 & 카테고리 */
 section {
   scroll-margin-top: 80px;
 }
@@ -151,9 +143,7 @@ section {
   font-family: "Inter", sans-serif;
 }
 
-/* ============================================ */
-/* 4. 버튼                                      */
-/* ============================================ */
+/* 버튼 */
 .btn-primary {
   background: var(--main-color);
   border: none;
@@ -186,9 +176,7 @@ section {
   color: #fff;
 }
 
-/* ============================================ */
-/* 5. CTA 비율                                  */
-/* ============================================ */
+/* CTA 섹션 */
 .cta-box {
   aspect-ratio: 5/4;
   max-height: 400px;
@@ -209,9 +197,7 @@ section {
   background: var(--bg-light);
 }
 
-/* ============================================ */
-/* 6. Pricing                                   */
-/* ============================================ */
+/* 요금제 */
 .plan-head {
   font-size: 1.25rem;
   font-weight: 700;
@@ -223,24 +209,18 @@ section {
   color: var(--main-color);
 }
 
-/* ============================================ */
-/* 6.5 Features Section                         */
-/* ============================================ */
-
+/* 기능 섹션 */
 .features-section .row {
   column-gap: 6rem;
   row-gap: 2rem;
 }
-
 @media (max-width: 768px) {
   .features-section .row {
     column-gap: 1.5rem;
   }
 }
 
-/* ============================================ */
-/* 7. Review Carousel                           */
-/* ============================================ */
+/* 리뷰 캐러셀 */
 .review-carousel {
   position: relative;
   max-width: 360px;
@@ -301,12 +281,10 @@ section {
   margin-bottom: 0.75rem;
 }
 .blockquote-footer {
-  margin-top: 1rem; /* 또는 원하는 수치로 조정 */
+  margin-top: 1rem;
 }
 
-/* ============================================ */
-/* 8. Footer                                    */
-/* ============================================ */
+/* 푸터 */
 .footer-dark {
   background: #1f2933;
   color: #cbd5e1;
@@ -340,9 +318,7 @@ section {
   color: #fff;
 }
 
-/* ============================================ */
-/* 9. Scroll-top                               */
-/* ============================================ */
+/* 스크롤 탑 버튼 */
 .scroll-top-btn {
   position: fixed;
   right: 32px;
@@ -360,10 +336,7 @@ section {
   transform: translateY(-4px);
 }
 
-/* ============================================ */
-/* 10. 팔레트 B~F (이하 동일)                   */
-/* ============================================ */
-/* ─ Palette-B : Peach-Rose Pastel ─ */
+/* 추가 색상 팔레트 (B~F) */
 :root.palette-b {
   --main-color: #d6a4a4;
   --main-dark: #8c6a6a;
@@ -371,8 +344,6 @@ section {
   --bg-light: #f8f6f4;
   --card-bg: #ffffff;
 }
-
-/* ─ Palette-C : Mint-Blue Pastel ─ */
 :root.palette-c {
   --main-color: #427d9d;
   --main-dark: #305b6d;
@@ -380,8 +351,6 @@ section {
   --bg-light: #dff5ff;
   --card-bg: #ffffff;
 }
-
-/* ─ Palette-D : Sand-Lavender Pastel ─ */
 :root.palette-d {
   --main-color: #6e7582;
   --main-dark: #4e545e;
@@ -389,8 +358,6 @@ section {
   --bg-light: #fff8e9;
   --card-bg: #ffffff;
 }
-
-/* ─ Palette-E : Fog-Lavender ─ */
 :root.palette-e {
   --main-color: #7c7aa6;
   --main-dark: #575579;
@@ -398,8 +365,6 @@ section {
   --bg-light: #eef0f9;
   --card-bg: #ffffff;
 }
-
-/* ─ Palette-F : Sage-Mint ─ */
 :root.palette-f {
   --main-color: #6b9080;
   --main-dark: #4f6b60;
