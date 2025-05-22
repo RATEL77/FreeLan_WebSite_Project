@@ -165,7 +165,7 @@ section {
   color: #fff;
 }
 .btn-secondary {
-  background: color-mix(in srgb, var(--main-color) 12%, #fff);
+  background: color-mix(in srgb, var(--main-color) 35%, #fff);
   color: var(--main-dark);
   border: 1px solid var(--main-color);
   font-weight: 700;
