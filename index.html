@@ -1,80 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="palette-a">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
-    <title>FreeLan • Freelance Matching Platform</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>FreeLan • Hire Freelancers or Get Hired</title>
 
-    <!-- 부트스트랩 CSS (JS 미포함) -->
+    <!-- 부트스트랩 CSS -->
     <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- 사용자 정의 CSS -->
+    <!-- 사용자 CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <!-- 📌 최상단 앵커: 스크롤-탑 버튼용 -->
   <body id="top">
-    <!-- ================================ -->
-    <!-- 1. 헤더 / 내비게이션 -->
-    <!-- ================================ -->
-    <header class="shadow-sm">
-      <nav class="navbar bg-white">
-        <div class="container d-flex flex-wrap justify-content-between">
-          <a class="navbar-brand fw-bold" href="#">FreeLan</a>
+    <!-- ================= 헤더 ================= -->
+    <header class="shadow-sm position-sticky top-0 bg-light z-3">
+      <nav class="navbar container-xxl p-3 d-flex flex-wrap">
+        <a
+          href="#"
+          class="navbar-brand d-flex align-items-center gap-2 brand-logo"
+        >
+          <span class="emoji">🚀</span><span>FreeLan</span>
+        </a>
 
-          <!-- 작은 화면에서도 JS 없이 동작하도록 단순 리스트 사용 -->
-          <ul
-            class="nav gap-3 flex-column flex-md-row align-items-start align-items-md-center mt-3 mt-md-0"
-          >
-            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-            <li class="nav-item">
-              <a class="nav-link" href="#service-section">Categories</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
-          </ul>
-        </div>
+        <ul
+          class="nav gap-4 flex-column flex-md-row align-items-start align-items-md-center mt-3 mt-md-0"
+        >
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service-section">Categories</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Support</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+        </ul>
       </nav>
     </header>
 
-    <!-- ================================ -->
-    <!-- 2. Hero 섹션 -->
-    <!-- ================================ -->
-    <section class="hero-section d-flex align-items-center">
+    <!-- ================= Hero ================= -->
+    <section class="hero-section">
       <div class="container">
-        <div class="row align-items-center gy-4">
-          <!-- 소개 영상 -->
-          <div class="col-md-6">
-            <!-- 짧은 루프 영상 한 개만 사용: JS 불필요 -->
-            <video
-              autoplay
-              muted
-              loop
-              playsinline
-              class="w-100 rounded-4 shadow"
-            >
-              <source src="assets/media/hero/hero-graphic1.mp4" type="video/mp4" />
-            </video>
+        <div class="row gy-3 align-items-center justify-content-center">
+          <div class="col-lg-5">
+            <div class="video-stack rounded-4 shadow">
+              <video class="hero-video v1" autoplay muted loop playsinline>
+                <source
+                  src="assets/media/hero/hero-graphic1.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <video class="hero-video v2" autoplay muted loop playsinline>
+                <source
+                  src="assets/media/hero/hero-graphic2.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <video class="hero-video v3" autoplay muted loop playsinline>
+                <source
+                  src="assets/media/hero/hero-graphic3.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
           </div>
 
-          <!-- 메시지 -->
-          <div class="col-md-6">
+          <div class="col-lg-5">
             <h1 class="display-5 fw-bold mb-3">
-              Find your perfect match — hire talent or offer your skills
+              Hire trusted freelancers or offer your skills
             </h1>
             <p class="lead mb-4">
-              Launch a project or showcase your expertise in minutes.
+              Publish a project or showcase your expertise in minutes.
             </p>
 
             <div class="d-flex gap-3 flex-wrap">
               <a href="#" class="btn btn-primary btn-lg px-4">Post a Project</a>
-              <a href="#" class="btn btn-outline-primary btn-lg px-4"
+              <a href="#" class="btn btn-secondary btn-lg px-4"
                 >Join as Freelancer</a
               >
             </div>
@@ -83,9 +91,7 @@
       </div>
     </section>
 
-    <!-- ================================ -->
-    <!-- 3. 서비스 카테고리 -->
-    <!-- ================================ -->
+    <!-- ============== Categories ============== -->
     <section
       id="service-section"
       class="py-5"
@@ -94,132 +100,110 @@
       <div class="container">
         <h2 class="text-center fw-bold mb-5">Service Categories</h2>
 
-        <div
-          class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 text-center"
-        >
-          <!-- 각 카테고리는 아이콘 + 제목 -->
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 text-center">
+          <!-- 카드 8개 -->
           <div class="col">
-            <div class="card h-100 p-4 shadow-sm">
+            <div class="card h-100 p-4">
               <img
                 src="assets/icons/design.svg"
-                alt="Design"
                 class="icon mb-3"
+                alt="Design"
               />
               <h5 class="card-title">Design</h5>
             </div>
           </div>
-
           <div class="col">
-            <div class="card h-100 p-4 shadow-sm">
+            <div class="card h-100 p-4">
               <img
                 src="assets/icons/develop.svg"
-                alt="Development & IT"
                 class="icon mb-3"
+                alt="Development & IT"
               />
-              <h5 class="card-title">Development &amp; IT</h5>
+              <h5 class="card-title">Development&nbsp;&amp;&nbsp;IT</h5>
             </div>
           </div>
-
           <div class="col">
-            <div class="card h-100 p-4 shadow-sm">
+            <div class="card h-100 p-4">
               <img
                 src="assets/icons/translate.svg"
-                alt="Translation & Language"
                 class="icon mb-3"
+                alt="Translation & Language"
               />
-              <h5 class="card-title">Translation &amp; Language</h5>
+              <h5 class="card-title">Translation&nbsp;&amp;&nbsp;Language</h5>
             </div>
           </div>
-
           <div class="col">
-            <div class="card h-100 p-4 shadow-sm">
+            <div class="card h-100 p-4">
               <img
                 src="assets/icons/writing.svg"
-                alt="Writing & Content"
                 class="icon mb-3"
+                alt="Writing"
               />
-              <h5 class="card-title">Writing &amp; Content</h5>
+              <h5 class="card-title">Writing&nbsp;&amp;&nbsp;Content</h5>
             </div>
           </div>
-
           <div class="col">
-            <div class="card h-100 p-4 shadow-sm">
+            <div class="card h-100 p-4">
               <img
                 src="assets/icons/marketing.svg"
-                alt="Marketing & Branding"
                 class="icon mb-3"
+                alt="Marketing"
               />
-              <h5 class="card-title">Marketing &amp; Branding</h5>
+              <h5 class="card-title">Marketing&nbsp;&amp;&nbsp;Branding</h5>
             </div>
           </div>
-
           <div class="col">
-            <div class="card h-100 p-4 shadow-sm">
-              <img
-                src="assets/icons/video.svg"
-                alt="Video & Media"
-                class="icon mb-3"
-              />
-              <h5 class="card-title">Video &amp; Media</h5>
+            <div class="card h-100 p-4">
+              <img src="assets/icons/video.svg" class="icon mb-3" alt="Video" />
+              <h5 class="card-title">Video&nbsp;&amp;&nbsp;Media</h5>
             </div>
           </div>
-
           <div class="col">
-            <div class="card h-100 p-4 shadow-sm">
-              <img
-                src="assets/icons/music.svg"
-                alt="Music & Audio"
-                class="icon mb-3"
-              />
-              <h5 class="card-title">Music &amp; Audio</h5>
+            <div class="card h-100 p-4">
+              <img src="assets/icons/music.svg" class="icon mb-3" alt="Music" />
+              <h5 class="card-title">Music&nbsp;&amp;&nbsp;Audio</h5>
             </div>
           </div>
-
           <div class="col">
-            <div class="card h-100 p-4 shadow-sm">
+            <div class="card h-100 p-4">
               <img
                 src="assets/icons/consult.svg"
-                alt="Consulting & Communication"
                 class="icon mb-3"
+                alt="Consulting"
               />
-              <h5 class="card-title">Consulting &amp; Communication</h5>
+              <h5 class="card-title">
+                Consulting&nbsp;&amp;&nbsp;Communication
+              </h5>
             </div>
           </div>
         </div>
 
-        <!-- 전체보기 링크 -->
         <div class="text-center mt-5">
-          <a href="#service-section" class="btn btn-outline-primary btn-lg px-5"
+          <a href="#" class="btn btn-secondary btn-lg px-5"
             >View All Services</a
           >
         </div>
       </div>
     </section>
 
-    <!-- ================================ -->
-    <!-- 4. CTA(동영상 + 설명) -->
-    <!-- ================================ -->
-    <section class="py-5" style="background-color: var(--bg-light)">
+    <!-- ================= CTA ================= -->
+    <section class="cta-section py-5 section-white">
       <div class="container">
-        <div class="row align-items-center gy-4">
-          <!-- 영상 -->
-          <div class="col-md-6">
-            <video
-              autoplay
-              muted
-              loop
-              playsinline
-              class="w-100 rounded-4 shadow"
-            >
-              <source src="assets/media/hero/cta-video.mp4" type="video/mp4" />
-            </video>
+        <div class="row align-items-center gy-3">
+          <div class="col-lg-5">
+            <div class="cta-box rounded-4 shadow">
+              <video class="cta-video" autoplay muted loop playsinline>
+                <source
+                  src="assets/media/hero/cta-video.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
           </div>
-
-          <!-- 설명 -->
-          <div class="col-md-6">
+          <div class="col-lg-6 offset-lg-1">
             <h2 class="fw-bold mb-3">Start your journey today</h2>
             <p class="mb-4">
-              FreeLan helps people connect and collaborate—anytime, anywhere.
+              FreeLan connects businesses and talent for seamless collaboration.
             </p>
             <a href="#" class="btn btn-primary btn-lg px-4">Get Started</a>
           </div>
@@ -227,99 +211,74 @@
       </div>
     </section>
 
-    <!-- ================================ -->
-    <!-- 5. 요금제 -->
-    <!-- ================================ -->
-    <section class="py-5">
+    <!-- ================= Pricing ============== -->
+    <section class="py-5 section-neutral">
       <div class="container">
-        <h2 class="text-center fw-bold mb-4">
-          What You Get with Each Plan
-        </h2>
+        <h2 class="text-center fw-bold mb-4">Choose Your Plan</h2>
         <p class="text-center text-muted mb-5 small">
-          Compare plans to find the service level that fits your project needs.
+          Pick the level of service that best fits your project.
         </p>
 
         <div class="row row-cols-1 row-cols-md-3 g-4">
-          <!-- Basic -->
+          <!-- 세 카드 -->
           <div class="col">
-            <div class="card h-100 p-4 text-center shadow-sm">
-              <h5 class="fw-bold mb-3">Basic</h5>
-              <h2 class="text-primary mb-3">$10</h2>
+            <div class="card h-100 p-4 text-center">
+              <h5 class="plan-head mb-3">Basic</h5>
+              <h2 class="plan-price mb-3">$10</h2>
               <ul class="list-unstyled mb-4">
-                <li>One-time task support</li>
-                <li>Delivery in 3 days</li>
+                <li>Single-task support</li>
+                <li>Delivery within 3 days</li>
                 <li>Email communication</li>
               </ul>
-              <button class="btn btn-outline-primary w-100">
-                Choose This Plan
-              </button>
+              <button class="btn btn-outline-primary w-100">Select Plan</button>
             </div>
           </div>
-
-          <!-- Pro -->
           <div class="col">
-            <div
-              class="card border-2 border-primary h-100 p-4 text-center shadow-sm"
-            >
-              <h5 class="fw-bold mb-3 text-primary">Pro</h5>
-              <h2 class="text-primary mb-3">$20</h2>
+            <div class="card h-100 p-4 text-center">
+              <h5 class="plan-head mb-3">Pro</h5>
+              <h2 class="plan-price mb-3">$20</h2>
               <ul class="list-unstyled mb-4">
-                <li>Project collaboration with revisions</li>
-                <li>Delivery in 2 days</li>
+                <li>Collab + 3 revisions</li>
+                <li>Delivery within 2 days</li>
                 <li>Priority messaging</li>
               </ul>
-              <button class="btn btn-outline-primary w-100">
-                Choose This Plan
-              </button>
+              <button class="btn btn-outline-primary w-100">Select Plan</button>
             </div>
           </div>
-
-          <!-- Premium -->
           <div class="col">
-            <div class="card h-100 p-4 text-center shadow-sm">
-              <h5 class="fw-bold mb-3">Premium</h5>
-              <h2 class="text-primary mb-3">$35</h2>
+            <div class="card h-100 p-4 text-center">
+              <h5 class="plan-head mb-3">Premium</h5>
+              <h2 class="plan-price mb-3">$35</h2>
               <ul class="list-unstyled mb-4">
                 <li>Full project coverage</li>
                 <li>Next-day delivery</li>
                 <li>1-on-1 video support</li>
               </ul>
-              <button class="btn btn-outline-primary w-100">
-                Choose This Plan
-              </button>
+              <button class="btn btn-outline-primary w-100">Select Plan</button>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ================================ -->
-    <!-- 6. 특징 설명 -->
-    <!-- ================================ -->
-    <section class="py-5">
+    <!-- ================= Features ============== -->
+    <section class="py-5 section-white">
       <div class="container">
-        <div class="row align-items-center gy-4">
+        <div class="row align-items-center gy-3 gap-lg-5">
           <div class="col-md-6">
             <img
               src="assets/media/hero/hero-graphic2.svg"
-              alt="Feature graphic"
-              class="img-fluid rounded-4 shadow-sm"
+              alt="Features illustration"
+              class="img-fluid rounded-4 shadow"
             />
           </div>
-
-          <div class="col-md-6">
-            <h2 class="fw-bold mb-4">Why choose FreeLan?</h2>
+          <div class="col-md-5">
+            <h2 class="fw-bold mb-4">Why FreeLan?</h2>
             <ul class="list-unstyled fs-5">
-              <li class="mb-3">✔ Post your project and get matched instantly</li>
-              <li class="mb-3">
-                ✔ Work securely with clear communication tools
-              </li>
-              <li class="mb-3">
-                ✔ Manage timelines, budgets, and delivery with ease
-              </li>
-              <li class="mb-3">
-                ✔ Collaborate and build long-term partnerships
-              </li>
+              <li class="mb-3">✔ Instant, AI-assisted matching</li>
+              <li class="mb-3">✔ Secure payments and escrow</li>
+              <li class="mb-3">✔ Built-in project tracking</li>
+              <li class="mb-3">✔ Long-term partnership tools</li>
             </ul>
             <a href="#" class="btn btn-primary btn-lg px-4 mt-2"
               >Explore Features</a
@@ -329,102 +288,138 @@
       </div>
     </section>
 
-    <!-- ================================ -->
-    <!-- 7. 후기 -->
-    <!-- ================================ -->
-    <section
-      class="py-5"
-      style="background-color: var(--bg-soft)"
-    >
+    <!-- ================= Reviews =============== -->
+    <section class="py-5" style="background-color: var(--bg-soft)">
       <div class="container">
         <h2 class="text-center fw-bold mb-5">User Reviews</h2>
 
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-          <!-- Review 1 -->
-          <div class="col">
-            <div class="review-card bg-white p-4 text-center h-100">
-              <img
-                src="assets/media/review/review1.jpg"
-                alt="Review 1"
-                class="review-img mb-4"
-              />
-              <blockquote class="blockquote fst-italic mb-2">
-                “Fast and professional service!”
-              </blockquote>
-              <footer class="blockquote-footer text-muted">Emily J.</footer>
-            </div>
-          </div>
+        <div class="review-carousel mx-auto">
+          <figure class="review-item r1 text-center">
+            <img
+              src="assets/media/review/review1.jpg"
+              alt="Emily Johnson"
+              class="review-img mb-4"
+            />
+            <blockquote class="review-quote">
+              “Fast and professional service that exceeded my expectations. I’ll
+              definitely work with them again.”
+            </blockquote>
+            <figcaption class="blockquote-footer text-muted">
+              Emily Johnson
+            </figcaption>
+          </figure>
 
-          <!-- Review 2 -->
-          <div class="col">
-            <div class="review-card bg-white p-4 text-center h-100">
-              <img
-                src="assets/media/review/review2.jpg"
-                alt="Review 2"
-                class="review-img mb-4"
-              />
-              <blockquote class="blockquote fst-italic mb-2">
-                “Very satisfied with the results.”
-              </blockquote>
-              <footer class="blockquote-footer text-muted">Daniel K.</footer>
-            </div>
-          </div>
+          <figure class="review-item r2 text-center">
+            <img
+              src="assets/media/review/review2.jpg"
+              alt="Daniel Kim"
+              class="review-img mb-4"
+            />
+            <blockquote class="review-quote">
+              “Very satisfied with both the quality and the communication
+              throughout the project.”
+            </blockquote>
+            <figcaption class="blockquote-footer text-muted">
+              Daniel Kim
+            </figcaption>
+          </figure>
 
-          <!-- Review 3 -->
-          <div class="col">
-            <div class="review-card bg-white p-4 text-center h-100">
-              <img
-                src="assets/media/review/review3.jpg"
-                alt="Review 3"
-                class="review-img mb-4"
-              />
-              <blockquote class="blockquote fst-italic mb-2">
-                “Reliable and quick communication.”
-              </blockquote>
-              <footer class="blockquote-footer text-muted">Sophie L.</footer>
-            </div>
-          </div>
+          <figure class="review-item r3 text-center">
+            <img
+              src="assets/media/review/review3.jpg"
+              alt="Sophie Lee"
+              class="review-img mb-4"
+            />
+            <blockquote class="review-quote">
+              “Reliable partner—quick responses, clear milestones, and superb
+              final delivery.”
+            </blockquote>
+            <figcaption class="blockquote-footer text-muted">
+              Sophie Lee
+            </figcaption>
+          </figure>
 
-          <!-- Review 4 -->
-          <div class="col">
-            <div class="review-card bg-white p-4 text-center h-100">
-              <img
-                src="assets/media/review/review4.jpg"
-                alt="Review 4"
-                class="review-img mb-4"
-              />
-              <blockquote class="blockquote fst-italic mb-2">
-                “Top quality work, will hire again.”
-              </blockquote>
-              <footer class="blockquote-footer text-muted">Mark T.</footer>
-            </div>
-          </div>
+          <figure class="review-item r4 text-center">
+            <img
+              src="assets/media/review/review4.jpg"
+              alt="Mark Thompson"
+              class="review-img mb-4"
+            />
+            <blockquote class="review-quote">
+              “Top-quality work with great attention to detail. Will hire again
+              for future projects.”
+            </blockquote>
+            <figcaption class="blockquote-footer text-muted">
+              Mark Thompson
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
-    <!-- ================================ -->
-    <!-- 8. 푸터 -->
-    <!-- ================================ -->
-    <footer class="bg-dark text-white py-4">
-      <div class="container text-center">
-        <p class="mb-1 fw-semibold">
+    <!-- ================= Footer ================ -->
+    <footer class="footer-dark py-5">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-md-3">
+            <h6 class="footer-head mb-3">Company</h6>
+            <ul class="footer-list">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Legal Notice</a></li>
+              <li><a href="#">Copyright Info</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h6 class="footer-head mb-3">Support</h6>
+            <ul class="footer-list">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Sitemap</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h6 class="footer-head mb-3">Legal</h6>
+            <ul class="footer-list">
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h6 class="footer-head mb-3">Contact</h6>
+            <p class="small mb-2">+1&nbsp;800-000-0000</p>
+            <p class="small">
+              1600 Amphitheatre Parkway<br />Mountain View,
+              CA&nbsp;94043&nbsp;USA
+            </p>
+            <a
+              href="https://github.com/RATEL77"
+              target="_blank"
+              class="github-link"
+              aria-label="GitHub"
+            >
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49C3.73 13.91 3.26 12.7 3.26 12.7c-.36-.92-.88-1.17-.88-1.17-.72-.5.05-.49.05-.49.8.06 1.22.83 1.22.83.71 1.22 1.87.87 2.33.66.07-.52.28-.87.51-1.07-2.66-.3-5.46-1.33-5.46-5.9 0-1.3.47-2.36 1.23-3.19-.12-.3-.54-1.52.12-3.16 0 0 1.01-.32 3.3 1.22a11.5 11.5 0 013-.4c1.02.01 2.04.14 3 .4 2.28-1.54 3.29-1.22 3.29-1.22.67 1.64.25 2.86.13 3.16.77.83 1.23 1.89 1.23 3.19 0 4.6-2.8 5.59-5.48 5.88.29.26.54.77.54 1.55 0 1.12-.01 2.02-.01 2.3 0 .21.15.46.55.38A8 8 0 0016 8c0-4.42-3.58-8-8-8z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <hr class="border-secondary mt-4" />
+        <p class="text-center small mb-0">
           © 2025 FreeLan. All rights reserved.
-        </p>
-        <p class="mb-0 small">
-          <a href="#" class="text-white text-decoration-underline me-3"
-            >Terms</a
-          >
-          <a href="#" class="text-white text-decoration-underline"
-            >Privacy Policy</a
-          >
         </p>
       </div>
     </footer>
 
-    <!-- ================================ -->
-    <!-- 9. 상단으로 이동 버튼 (JS 불필요) -->
-    <!-- ================================ -->
+    <!-- 스크롤-탑 -->
     <a
       href="#top"
       class="scroll-top-btn btn btn-primary d-flex align-items-center justify-content-center"
