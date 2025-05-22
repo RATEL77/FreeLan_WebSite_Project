@@ -107,6 +107,16 @@ header {
   }
 }
 
+.hero-section .row {
+  column-gap: 8rem;
+}
+
+@media (max-width: 992px) {
+  .hero-section .row {
+    column-gap: 2rem;
+  }
+}
+
 /* ============================================ */
 /* 3. 카드 & 카테고리                           */
 /* ============================================ */
@@ -180,8 +190,8 @@ section {
 /* 5. CTA 비율                                  */
 /* ============================================ */
 .cta-box {
-  aspect-ratio: 4/3;
-  max-height: 360px;
+  aspect-ratio: 5/4;
+  max-height: 400px;
   overflow: hidden;
 }
 .cta-video {
@@ -219,7 +229,7 @@ section {
 
 .features-section .row {
   column-gap: 6rem;
-  row-gap: 2rem;      
+  row-gap: 2rem;
 }
 
 @media (max-width: 768px) {
