@@ -80,6 +80,14 @@ git commit -m "docs: add README and license info"
 MIT License  
 Permission is hereby granted, free of charge, to any person obtaining a copy...
 
+### 🧾 GitHub Pages Deployment
+
+**📡** [https://ratel77.github.io/FreeLan_WebSite_Project/](https://ratel77.github.io/FreeLan_WebSite_Project/)
+
+This project is publicly and permanently accessible through **GitHub Pages**.  
+You can visit the live version at the link above.
+
+
 ---
 
 # 📙 🇰🇷 한국어 설명
@@ -162,9 +170,8 @@ git commit -m "docs: README 및 라이선스 정보 추가"
 MIT License  
 본 소프트웨어 및 관련 문서 파일(이하 “소프트웨어”)의 복사본을 취득한 자에게 무료로 사용, 복제, 수정, 병합, 게시, 배포할 권한을 부여합니다...
 
----
-
-## 🧾 GitHub Pages 배포 주소
+### 🧾 GitHub Pages 배포 주소
 
 **📡** [https://ratel77.github.io/FreeLan_WebSite_Project/](https://ratel77.github.io/FreeLan_WebSite_Project/)
 
+---
