@@ -363,11 +363,11 @@ section {
 /* 모바일에서만 스크롤 탑 버튼 크기 줄이기 */
 @media (max-width: 600px) {
   .scroll-top-btn {
-    width: 38px !important;    /* 너비 축소 */
-    height: 38px !important;   /* 높이 축소 */
-    font-size: 1rem !important;/* 아이콘 크기 축소 */
-    right: 18px !important;    /* 오른쪽 여백 */
-    bottom: 18px !important;   /* 아래쪽 여백 */
+    width: 38px !important; /* 너비 축소 */
+    height: 38px !important; /* 높이 축소 */
+    font-size: 1rem !important; /* 아이콘 크기 축소 */
+    right: 18px !important; /* 오른쪽 여백 */
+    bottom: 18px !important; /* 아래쪽 여백 */
   }
 }
 
