@@ -159,6 +159,14 @@ section {
   font-family: "Inter", sans-serif;
 }
 
+@media (max-width: 600px) {
+  .card-title {
+    font-size: 0.96rem !important;
+    line-height: 1.3 !important;
+    word-break: keep-all !important; /* 단어 단위로 줄바꿈 */
+  }
+}
+
 /* 버튼 */
 .btn-primary {
   background: var(--main-color);
