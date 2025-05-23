@@ -1,7 +1,7 @@
-# 🚀 FreeLan
+# 🚀 FreeLan 
 
-**FreeLan** is a modern freelancer-matching platform UI built with pure **HTML5** and **CSS3** (no JavaScript).  
-Responsive, accessible, and inspired by services like Kmong, Upwork, and Fiverr.
+**FreeLan** is a modern **freelancer-matching platform WebSite** built with pure **HTML5** and **CSS3** (no JavaScript).  
+Responsive, accessible, and inspired by services like Upwork, and Fiverr.
 
 ---
 
@@ -61,7 +61,9 @@ _All fonts from **Google Fonts** – free for commercial use._
 
 ### 🌍 Live Demo
 
-<https://ratel77.github.io/FreeLan_WebSite_Project/>
+🔗 [View the live site here](https://ratel77.github.io/FreeLan_WebSite_Project/)
+
+> 💡 No screenshots needed — this site is fully deployed and navigable.
 
 ### 📦 Assets & Licenses
 
@@ -89,6 +91,12 @@ MIT License – free to use, modify, and distribute.
 ---
 
 ## 📙 🇰🇷 한국어 설명
+
+### 🚀 FreeLan
+
+**FreeLan**은 **HTML5**와 **CSS3**만으로 제작된 현대적인 **프리랜서 매칭 플랫폼 웹사이트**입니다.  
+자바스크립트 없이도 반응형과 접근성을 완전히 구현했으며, Upwork, Fiverr와 같은 실서비스를 참고해 디자인되었습니다.
+
 
 ### ✨ 프로젝트 개요
 
@@ -135,7 +143,9 @@ Bootstrap Grid + 커스텀 미디어쿼리 적용.
 
 ### 🌍 배포 주소
 
-<https://ratel77.github.io/FreeLan_WebSite_Project/>
+🔗 [실시간 사이트 보기](https://ratel77.github.io/FreeLan_WebSite_Project/)
+
+> 💡 캡처 이미지 없이 실제 반응형 웹사이트를 직접 확인하실 수 있습니다.
 
 ### 📦 리소스 및 저작권
 
@@ -157,3 +167,5 @@ Bootstrap Grid + 커스텀 미디어쿼리 적용.
 ### 📜 라이선스
 
 MIT License – 누구나 무료로 사용·복제·수정·배포 가능.
+
+---
